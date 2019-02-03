@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://castle-tile.tres" type="TileSet" id=1]
+[ext_resource path="res://Hero.tscn" type="PackedScene" id=2]
+
+[node name="Node" type="Node" index="0"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 8, 8 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 2228296, 8, 0, 2293806, 4, 0, 2359340, 4, 0, 2424874, 4, 0, 2490408, 4, 0, 2490424, 7, 0, 2490440, 8, 0, 2555942, 4, 0, 2621462, 0, 0, 2621466, 0, 0, 2621470, 0, 0, 2621474, 0, 0, 2752584, 8, 0, 3014656, 0, 0, 3014660, 0, 0, 3014664, 0, 0, 3014668, 0, 0, 3014672, 0, 0, 3014676, 7, 0, 3014678, 2, 0, 3014712, 7, 0, 3014728, 8, 0, 3080216, 2, 0, 3145728, 6, 0, 3145730, 6, 0, 3145732, 6, 0, 3145734, 6, 0, 3145736, 6, 0, 3145738, 6, 0, 3145740, 6, 0, 3145742, 6, 0, 3145744, 6, 0, 3145746, 6, 0, 3145754, 2, 0, 3211292, 2, 0, 3276800, 6, 0, 3276802, 6, 0, 3276804, 6, 0, 3276806, 6, 0, 3276808, 6, 0, 3276810, 6, 0, 3276812, 6, 0, 3276814, 6, 0, 3276816, 6, 0, 3276818, 6, 0, 3276830, 2, 0, 3276872, 8, 0, 3342368, 2, 0, 3407872, 5, 0, 3407874, 5, 0, 3407876, 5, 0, 3407878, 5, 0, 3407880, 5, 0, 3407882, 5, 0, 3407884, 5, 0, 3407886, 5, 0, 3407888, 5, 0, 3407890, 5, 0, 3407906, 2, 0, 3473444, 2, 0, 3538944, 8, 0, 3538948, 8, 0, 3538952, 8, 0, 3538956, 8, 0, 3538960, 8, 0, 3538964, 8, 0, 3538968, 8, 0, 3538972, 8, 0, 3538976, 8, 0, 3538980, 8, 0, 3538984, 8, 0, 3538988, 8, 0, 3538992, 8, 0, 3538996, 8, 0, 3539000, 8, 0, 3539004, 8, 0, 3539008, 8, 0, 3539012, 8, 0, 3539016, 8, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="Hero" parent="TileMap" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 16, 320 )
+
+
